@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Cordeau — Scan d'un devis</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&amp;family=Inter:wght@400;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1F4FD8}a:hover{color:#1A3FB0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #111417; font-family: Inter, system-ui, sans-serif; color: #1C2127">
+  <div style="position: absolute; left: 0; right: 0; top: 0; height: 360px; padding-top: 54px; box-sizing: border-box">
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 8px">
+      <a href="Main.dc.html" aria-label="Fermer le scan" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #ECEEEA">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6l-12 12"/><path d="M6 6l12 12"/></svg>
+      </a>
+      <span style="font-weight: 600; font-size: 16px; line-height: 24px; color: #ECEEEA">Devis détecté</span>
+      <span style="width: 44px"></span>
+    </div>
+    <div style="position: relative; margin: 16px auto 0; width: 196px; height: 236px">
+      <div style="position: absolute; inset: 10px; background: #F7F7F4; border-radius: 4px; transform: rotate(-2deg); padding: 18px 16px; box-sizing: border-box; display: flex; flex-direction: column; gap: 7px">
+        <div style="height: 10px; width: 60%; background: #1C2127; border-radius: 2px"></div>
+        <div style="height: 6px; width: 40%; background: #A4ACB4; border-radius: 2px"></div>
+        <div style="height: 1px; margin: 6px 0; background: #DADDD8"></div>
+        <div style="height: 6px; width: 90%; background: #C9CDD1; border-radius: 2px"></div>
+        <div style="height: 6px; width: 80%; background: #C9CDD1; border-radius: 2px"></div>
+        <div style="height: 6px; width: 85%; background: #C9CDD1; border-radius: 2px"></div>
+        <div style="height: 6px; width: 70%; background: #C9CDD1; border-radius: 2px"></div>
+        <div style="margin-top: auto; align-self: flex-end; height: 18px; width: 64px; background: #F2C230; border-radius: 3px; opacity: .85"></div>
+      </div>
+      <div style="position: absolute; left: 0; top: 0; width: 28px; height: 28px; border-left: 3px solid #93AEFF; border-top: 3px solid #93AEFF; border-radius: 8px 0 0 0"></div>
+      <div style="position: absolute; right: 0; top: 0; width: 28px; height: 28px; border-right: 3px solid #93AEFF; border-top: 3px solid #93AEFF; border-radius: 0 8px 0 0"></div>
+      <div style="position: absolute; left: 0; bottom: 0; width: 28px; height: 28px; border-left: 3px solid #93AEFF; border-bottom: 3px solid #93AEFF; border-radius: 0 0 0 8px"></div>
+      <div style="position: absolute; right: 0; bottom: 0; width: 28px; height: 28px; border-right: 3px solid #93AEFF; border-bottom: 3px solid #93AEFF; border-radius: 0 0 8px 0"></div>
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; top: 380px; background: #FFFFFF; border-radius: 28px 28px 0 0; box-shadow: 0 -8px 24px rgba(0,0,0,.25); padding: 8px 20px 34px; box-sizing: border-box; display: flex; flex-direction: column">
+    <div aria-hidden="true" style="align-self: center; width: 36px; height: 5px; border-radius: 3px; background: #DADDD8; margin-bottom: 14px"></div>
+    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px">
+      <h1 style="margin: 0; flex: 1; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px; letter-spacing: -0.01em">Vérifie les infos</h1>
+      <span style="display: flex; align-items: center; gap: 4px; font-weight: 600; font-size: 13px; line-height: 18px; padding: 4px 10px; border-radius: 999px; background: #E4F1EB; color: #155E3E">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5l10 -10"/></svg>Lu sur le devis</span>
+    </div>
+    <p style="margin: 0 0 16px; font-size: 13px; line-height: 18px; color: #5E666E">Corrige si besoin avant de ranger le document.</p>
+
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <label for="artisan" style="font-weight: 600; font-size: 13px; line-height: 18px; color: #5E666E">Artisan</label>
+        <input id="artisan" value="Plomberie Martin" readonly style="height: 48px; box-sizing: border-box; padding: 0 14px; border: 1px solid #878E95; border-radius: 8px; font: 400 16px/24px Inter, sans-serif; color: #1C2127; background: #FFFFFF">
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <label for="montant" style="font-weight: 600; font-size: 13px; line-height: 18px; color: #5E666E">Montant TTC</label>
+          <input id="montant" value="4 200 €" inputmode="decimal" readonly style="height: 48px; box-sizing: border-box; padding: 0 14px; border: 2px solid #1F4FD8; border-radius: 8px; font: 600 16px/24px Inter, sans-serif; color: #1C2127; background: #FFFFFF; font-variant-numeric: tabular-nums">
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <label for="date" style="font-weight: 600; font-size: 13px; line-height: 18px; color: #5E666E">Date du devis</label>
+          <input id="date" value="4 mars 2026" readonly style="height: 48px; box-sizing: border-box; padding: 0 14px; border: 1px solid #878E95; border-radius: 8px; font: 400 16px/24px Inter, sans-serif; color: #1C2127; background: #FFFFFF">
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <span style="font-weight: 600; font-size: 13px; line-height: 18px; color: #5E666E">Lot de travaux</span>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap">
+          <button aria-pressed="true" style="height: 40px; padding: 0 14px; border-radius: 999px; border: 2px solid #1F4FD8; background: #E6EAF0; color: #1F4FD8; font: 600 13px/18px Inter, sans-serif">Salle de bain</button>
+          <button aria-pressed="false" style="height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid #878E95; background: #FFFFFF; color: #1C2127; font: 600 13px/18px Inter, sans-serif">Cuisine</button>
+          <button aria-pressed="false" style="height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid #878E95; background: #FFFFFF; color: #1C2127; font: 600 13px/18px Inter, sans-serif">Électricité</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 4px">
+      <a href="Lot.dc.html" style="height: 48px; display: flex; align-items: center; justify-content: center; background: #1F4FD8; color: #FFFFFF; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 16px">Ranger dans Salle de bain</a>
+      <a href="Scan.dc.html" style="height: 48px; display: flex; align-items: center; justify-content: center; color: #1F4FD8; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 16px">Reprendre la photo</a>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

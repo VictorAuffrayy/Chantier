@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Cordeau — Budget</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&amp;family=Inter:wght@400;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1F4FD8}a:hover{color:#1A3FB0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F3F4F1; font-family: Inter, system-ui, sans-serif; color: #1C2127">
+  <div style="display: flex; flex-direction: column; padding-top: 54px">
+    <header style="display: flex; align-items: center; padding: 8px 8px 0 20px; gap: 8px">
+      <h1 style="margin: 0; flex: 1; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px; line-height: 32px; letter-spacing: -0.02em">Budget</h1>
+      <button aria-label="Options du projet" style="width: 44px; height: 44px; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; padding: 0; color: #1C2127">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M18 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/></svg>
+      </button>
+    </header>
+    <p style="margin: 0; padding: 0 20px 16px; font-size: 13px; line-height: 18px; color: #5E666E">Appartement rue Oberkampf · 52 m²</p>
+
+    <section style="padding: 0 20px 20px; display: flex; flex-direction: column; gap: 4px">
+      <span style="font-size: 13px; line-height: 18px; color: #5E666E">Reste à engager</span>
+      <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 40px; line-height: 44px; letter-spacing: -0.02em; font-variant-numeric: tabular-nums">18 520 €</span>
+      <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 6px">
+        <div role="img" aria-label="Budget : 30 480 euros engagés sur 49 000 prévus" style="position: relative; height: 32px; border-radius: 4px; overflow: hidden; background: #F2C230; box-shadow: inset 0 0 0 1px #9A7406">
+          <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 62%; background: #1C2127; border-right: 2px solid #F3F4F1"></div>
+          <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: repeating-linear-gradient(90deg, transparent 0 calc(5% - 1px), rgba(255,255,255,.5) calc(5% - 1px) 5%)"></div>
+          <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 14px; background: repeating-linear-gradient(90deg, transparent 0 calc(25% - 1px), rgba(255,255,255,.55) calc(25% - 1px) 25%)"></div>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 13px; line-height: 18px; color: #5E666E; font-variant-numeric: tabular-nums">
+          <span>Engagé 30 480 €</span><span>Prévu 49 000 €</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: 0 20px 16px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+      <div style="background: #FFFFFF; border-radius: 16px; padding: 12px 16px; box-shadow: 0 1px 2px rgba(28,33,39,.06), 0 4px 12px rgba(28,33,39,.05)">
+        <div style="font-size: 13px; line-height: 18px; color: #5E666E">Déjà payé</div>
+        <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px; font-variant-numeric: tabular-nums">21 300 €</div>
+      </div>
+      <div style="background: #FFFFFF; border-radius: 16px; padding: 12px 16px; box-shadow: 0 1px 2px rgba(28,33,39,.06), 0 4px 12px rgba(28,33,39,.05)">
+        <div style="font-size: 13px; line-height: 18px; color: #5E666E">Reste à payer</div>
+        <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px; font-variant-numeric: tabular-nums">9 180 €</div>
+      </div>
+    </section>
+
+    <section style="padding: 0 20px 24px">
+      <a href="Lot.dc.html" style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: #FAF0E6; border-radius: 16px; text-decoration: none; color: #8A4D12">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/></svg>
+        <span style="display: flex; flex-direction: column; gap: 2px; flex: 1">
+          <span style="font-weight: 600; font-size: 16px; line-height: 24px">Acompte plombier vendredi</span>
+          <span style="font-size: 13px; line-height: 18px">1 260 € à verser à Plomberie Martin</span>
+        </span>
+      </a>
+    </section>
+
+    <section style="padding: 0 20px; display: flex; flex-direction: column; gap: 12px">
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; line-height: 26px; letter-spacing: -0.01em">Lots de travaux</h2>
+        <a href="Lot.dc.html" style="font-weight: 600; font-size: 16px; line-height: 24px; text-decoration: none; min-height: 44px; display: flex; align-items: center">Tout voir</a>
+      </div>
+
+      <a href="Lot.dc.html" style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #FFFFFF; border-radius: 16px; text-decoration: none; color: #1C2127; box-shadow: 0 1px 2px rgba(28,33,39,.06), 0 4px 12px rgba(28,33,39,.05)">
+        <span style="display: flex; justify-content: space-between; align-items: center">
+          <span style="font-weight: 600; font-size: 16px; line-height: 24px">Cuisine</span>
+          <span style="font-weight: 600; font-size: 13px; line-height: 18px; padding: 4px 10px; border-radius: 999px; background: #FAEBEB; color: #A32D2D">Dépassé</span>
+        </span>
+        <span style="font-size: 13px; line-height: 18px; color: #5E666E; font-variant-numeric: tabular-nums">9 240 € sur 8 500 €</span>
+        <span style="height: 4px; border-radius: 2px; background: #CF3B32"></span>
+      </a>
+
+      <a href="Lot.dc.html" style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #FFFFFF; border-radius: 16px; text-decoration: none; color: #1C2127; box-shadow: 0 1px 2px rgba(28,33,39,.06), 0 4px 12px rgba(28,33,39,.05)">
+        <span style="display: flex; justify-content: space-between; align-items: center">
+          <span style="font-weight: 600; font-size: 16px; line-height: 24px">Électricité</span>
+          <span style="font-weight: 600; font-size: 13px; line-height: 18px; padding: 4px 10px; border-radius: 999px; background: #E6EAF0; color: #1F4FD8">En cours</span>
+        </span>
+        <span style="font-size: 13px; line-height: 18px; color: #5E666E; font-variant-numeric: tabular-nums">3 100 € sur 5 000 €</span>
+        <span style="height: 4px; border-radius: 2px; background: #DADDD8; display: flex"><span style="width: 62%; border-radius: 2px; background: #1C2127"></span></span>
+      </a>
+
+      <a href="Lot.dc.html" style="display: flex; flex-direction: column; gap: 8px; padding: 16px; background: #FFFFFF; border-radius: 16px; text-decoration: none; color: #1C2127; box-shadow: 0 1px 2px rgba(28,33,39,.06), 0 4px 12px rgba(28,33,39,.05)">
+        <span style="display: flex; justify-content: space-between; align-items: center">
+          <span style="font-weight: 600; font-size: 16px; line-height: 24px">Salle de bain</span>
+          <span style="font-weight: 600; font-size: 13px; line-height: 18px; padding: 4px 10px; border-radius: 999px; background: #E4F1EB; color: #155E3E">Payé</span>
+        </span>
+        <span style="font-size: 13px; line-height: 18px; color: #5E666E; font-variant-numeric: tabular-nums">6 100 € sur 7 000 €</span>
+        <span style="height: 4px; border-radius: 2px; background: #DADDD8; display: flex"><span style="width: 87%; border-radius: 2px; background: #1C2127"></span></span>
+      </a>
+    </section>
+  </div>
+
+  <a href="Scan.dc.html" style="position: absolute; right: 20px; bottom: 100px; height: 48px; padding: 0 20px; display: flex; align-items: center; gap: 8px; background: #1F4FD8; color: #FFFFFF; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 16px; box-shadow: 0 4px 12px rgba(31,79,216,.3)">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M3 7v-2a2 2 0 0 1 2 -2h2"/><path d="M3 17v2a2 2 0 0 0 2 2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M17 21h2a2 2 0 0 0 2 -2v-2"/></svg>
+    Scanner
+  </a>
+
+  <nav aria-label="Navigation principale" style="position: absolute; left: 0; right: 0; bottom: 0; height: 80px; box-sizing: border-box; padding: 6px 8px 24px; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); background: #FFFFFF; box-shadow: 0 -8px 24px rgba(28,33,39,.08)">
+    <a href="Main.dc.html" aria-current="page" style="display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; color: #1F4FD8; font-weight: 600; font-size: 13px; line-height: 18px; padding-top: 4px">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.875 12c.621 0 1.125 .512 1.125 1.143v5.714c0 .631 -.504 1.143 -1.125 1.143h-15.875a1 1 0 0 1 -1 -1v-5.857c0 -.631 .504 -1.143 1.125 -1.143h15.75"/><path d="M9 12v2"/><path d="M6 12v3"/><path d="M12 12v3"/><path d="M18 12v3"/><path d="M15 12v2"/><path d="M3 3v4"/><path d="M3 5h18"/><path d="M21 3v4"/></svg>Budget</a>
+    <a href="Lot.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; color: #5E666E; font-weight: 600; font-size: 13px; line-height: 18px; padding-top: 4px">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.414 10l-7.383 7.418a2.091 2.091 0 0 0 0 2.967a2.11 2.11 0 0 0 2.976 0l7.407 -7.385"/><path d="M18.121 15.293l2.586 -2.586a1 1 0 0 0 0 -1.414l-7.586 -7.586a1 1 0 0 0 -1.414 0l-2.586 2.586a1 1 0 0 0 0 1.414l7.586 7.586a1 1 0 0 0 1.414 0"/></svg>Travaux</a>
+    <a href="Scan.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; color: #5E666E; font-weight: 600; font-size: 13px; line-height: 18px; padding-top: 4px">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2"/><path d="M9 7l1 0"/><path d="M9 13l6 0"/><path d="M13 17l2 0"/></svg>Documents</a>
+    <a href="Plans.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; color: #5E666E; font-weight: 600; font-size: 13px; line-height: 18px; padding-top: 4px">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5"/><path d="M9 4v13"/><path d="M15 7v5.5"/><path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879"/><path d="M19 18v.01"/></svg>Plans</a>
+    <a href="Main.dc.html" style="display: flex; flex-direction: column; align-items: center; gap: 2px; text-decoration: none; color: #5E666E; font-weight: 600; font-size: 13px; line-height: 18px; padding-top: 4px">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0 -3 -3.85"/></svg>Artisans</a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
